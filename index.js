@@ -32,9 +32,8 @@ async function getCourses() {
     .limit(10)
     .sort({name: 1})
     .select({name: 1, tags: 1})
+    .count();
    console.log(courses);
 }
 createCourse();
-
-// Class, objects
-// Course, nodeCourse
+getCourses();
